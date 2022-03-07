@@ -1,0 +1,202 @@
+.container{
+  margin: 0 auto;
+}
+
+.link{
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #0d1218;
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: rgb(48, 85, 139);
+}
+
+.screen{
+  width: 100%;
+  height: 690px;
+}
+.box{
+  width: 49%;
+  height: 690px;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-coloumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.landing-page{
+  position: absolute;
+}
+
+.header{
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.header li{
+  padding-right: 50px;
+  font-size: 20px;
+}
+
+.form_overall{
+  border: 3px solid transparent;
+  border-radius: 20px;
+  text-align: center;
+  color: #0d1218;
+  background: rgba(48, 85, 139,0.1);
+}
+
+input{
+  border: 1px solid transparent;
+  background: transparent;
+  color: #0d1218;
+  border-bottom: 2px solid #0d1218;
+  padding-bottom: 1px;
+}
+
+input:focus{
+  margin-left: 20px;
+  outline: none;
+  color: #0d1218;
+  background: transparent;
+  border-style: hidden;
+  border: 0.1px solid transparent;
+  border-bottom: 2px solid #0d1218;
+  transition: margin-left .15s ease-in-out;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]{
+  -moz-appearance: textfield;
+}
+
+.loginForm{
+  width: 200px;
+  height: 250px;
+}
+
+.buttonComponentText{
+  position: relative;
+  top: -200px;
+}
+
+.buttonComponentText1{
+  position: relative;
+  top: -200px;
+  right: 150px
+}
+
+.buttonComponentText h1{
+  color: #0d1218;
+}
+
+.registerForm{
+  width: 200px;
+  height: 330px;
+  right: 4%;
+}
+
+.formCloseButton{
+  cursor: pointer;
+  position: relative;
+  right: 30%;
+  font-size: 25px;
+}
+
+button{
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  color: white;
+  background: #0d1218;
+  outline: #0d1218;
+  border: #0d1218;
+}
+
+button:hover{
+  background: rgb(48, 85, 139);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  top: 20vh;
+  left: 5%;
+  width: 90%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.addSalesForm{
+  width: 200px;
+  height: 330px;
+  padding-top: 100px;
+}
+
+.profilePage{
+  justify-content:space-evenly;
+}
+
+li{
+  list-style: none;
+}
+
+.FontAwesomeIcon{
+  font-size: 50px;
+}
